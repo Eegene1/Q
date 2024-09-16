@@ -22,10 +22,8 @@ dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
 # 排除路线：包含的内容将不经过 QuantumultX 处理
 excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
 icmp_auto_reply=true
-
 [http_backend]
 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/backend-icloud-to-http.js, tag=TV Profile, path=^/icloud-profile/
-
 [dns]
 no-ipv6
 # DoH服务器(DNS over HTTPS)以加密的HTTPS协议进行DNS解析请求，避免原始DNS协议中用户的DNS解析请求被窃听或者修改的问题（例如中间人攻击）来达到保护用户隐私的目的
