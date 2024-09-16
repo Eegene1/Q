@@ -94,7 +94,7 @@ static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdon
 # > Telegram策略
 static=Telegram, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > OpenAI策略
-static=OpenAI, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=OpenAI, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
 # > Twitter策略
 static=Twitter, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > PayPal策略
