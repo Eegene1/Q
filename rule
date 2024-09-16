@@ -219,7 +219,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Q
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Redirect/Redirect.conf, tag=Redirect(blackmatrix7, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-Store, update-interval=172800, opt-parser=true, enabled=true
 https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
-[rewrite_remote]
+
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Module/Block/iOSUpdate.sgmodule, tag=屏蔽ios更新, update-interval=172800, opt-parser=true, enabled=true
 
 
