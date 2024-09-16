@@ -162,20 +162,15 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 # Direct+
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Direct/Direct.list, tag=修正, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list, tag=番茄去广告, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/Rule/Telegram.list, tag=TG转圈, force-policy=网速超快, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+.list, tag=Direct, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 
 # Reject
 # > Advertising
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=⛔️Advertising, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
-# > Hijacking
-https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list, tag=⛔️Hijacking, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
-# > Tracking
-https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list, tag=⛔️Tracking, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 [filter_local]
 # 本地分流规则:相同规则下本地规则优先生效
 # 耳东橙导航站
-host, cache.video.iqiyi.com, direct
+host, cache.video.iqiyi.com, direct            
 host-suffix, iqiyi, direct
 host, erdon.cc, HK
 host, app.ioskk.cc, HK
@@ -254,9 +249,9 @@ event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁检测, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png, enabled=true
 
 [mitm]
-# 开启 mitm，需要自行在Quantumult X中生成证书、安装、信任
-passphrase = 
-p12 = 
+# 跳过验证证书
 skip_validating_cert = false
+# 强制SNI域名
 force_sni_domain_name = false
-hostname = sub.store
+# 主机名
+hostname = pangolin-sdk-toutiao.com, pglstatp-toutiao.com, byteimg.com, pstatp.com, snssdk.com, -*amemv.com, -*snssdk.com, -www.google.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com, *.byteoversea.com, *.tik-tokapi.com, c.tieba.baidu.com
