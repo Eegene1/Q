@@ -61,6 +61,7 @@ server=/*testflight.apple.com/23.76.66.98
 url-latency-benchmark=Auto-HK, server-tag-regex=(?i)(香港|港|hong|HK|HKG|🇭🇰), check-interval=600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
 # 服务器按地区分组策略
 # 美国
+static=chose，erver-tag-regex=Q|W|E|R|T|Y|U|I|O|P|A|S|D|F|G|H|J|k|L|Z|X|C|V|B|N|M,img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
 static=US, server-tag-regex=美|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|🇺🇸|US, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
 # 英国
 static=UK, server-tag-regex=英|英国|uk|🇬🇧|UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/UK.png
@@ -114,7 +115,7 @@ static=Mainland, Final, direct, img-url=https://raw.githubusercontent.com/erdong
 # Advertising策略-去广告
 static=Advertising, direct, reject, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Final, Auto-HK, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Final, chose,Auto-HK, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 [filter_remote]
 ## 远程分流规则订阅
@@ -246,6 +247,7 @@ https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDo
 
 [task_local]
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP查询, img-url=location.fill.viewfinder.system
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁检测, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png, enabled=true
 [mitm]
 # 跳过验证证书
 skip_validating_cert = false
