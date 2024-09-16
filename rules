@@ -72,8 +72,6 @@ static=JP, server-tag-regex=日本|东京|大阪|泉日|埼玉|沪日|深日|�
 static=TW, server-tag-regex=台|台湾|TW|Taiwan, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
 # 新
 static=SG, server-tag-regex=狮城|新加坡|🇸🇬|SG|Singapore, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
-# Global策略
-static=Global, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
 # GlobalMedia策略
 static=GlobalMedia, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
@@ -99,12 +97,8 @@ static=Telegram, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.gith
 static=OpenAI, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > Twitter策略
 static=Twitter, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
-# > Speedtest策略
-static=Speedtest, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
 # > PayPal策略
 static=PayPal, direct, US, UK,Chose, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
-# > Apple策略
-static=TestFlight, US, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
 # > Google策略
 static=Google, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 # > Microsoft策略
@@ -120,8 +114,6 @@ static=Chose,Auto-HK, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.git
 ## 远程分流规则订阅
 ## 将网络请求进行分流，网络请求的走向(是否能成功访问)由匹配到的策略组决定
 # 部分规则有先后顺序要求，调整顺序可能失效
-# Speedtest规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list, tag=Speedtest 规则, force-policy=Speedtest, update-interval=86400, opt-parser=false, enabled=true
 # Netflix规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix 规则, force-policy=Netflix, update-interval=86400, opt-parser=false, enabled=true
 # Disney规则
@@ -148,10 +140,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter规则, force-policy=Twitter, update-interval=86400, opt-parser=false, enabled=true
 # Google规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google规则, force-policy=Google, update-interval=86400, opt-parser=false, enabled=true
-# Apple规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple 规则, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
-# Global规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/QuantumultX/Global/Global.list, tag=Global 规则, force-policy=Global, update-interval=86400, opt-parser=false, enabled=true
 # BiliBili规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=Bilibili, force-policy=BiliBili, update-interval=172800, opt-parser=false, enabled=true
 # Advertising规则
