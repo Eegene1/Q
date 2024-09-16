@@ -73,44 +73,44 @@ static=TW, server-tag-regex=台|台湾|TW|Taiwan, img-url=https://raw.githubuser
 # 新
 static=SG, server-tag-regex=狮城|新加坡|🇸🇬|SG|Singapore, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
 # Global策略
-static=Global, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
+static=Global, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
 # GlobalMedia策略
-static=GlobalMedia, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+static=GlobalMedia, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
 # > Youtibe策略
-static=YouTube, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+static=YouTube, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 # > Netflix策略
-static=Netflix, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+static=Netflix, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 # > Disney+策略
-static=Disney+, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+static=Disney+, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 # > HBO策略
-static=HBO, US, UK, HK, TW, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+static=HBO, US, UK, HK, TW, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok, US, UK, JP, TW, SG, Final, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok, US, UK, JP, TW, SG, Chose, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
-static=Spotify, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+static=Spotify, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
 # > BiliBili策略
 static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 # 软件&服务策略
 # > Telegram策略
-static=Telegram, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=Telegram, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > OpenAI策略
-static=OpenAI, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=OpenAI, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > Twitter策略
-static=Twitter, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+static=Twitter, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > Speedtest策略
-static=Speedtest, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
+static=Speedtest, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
 # > PayPal策略
-static=PayPal, direct, US, UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+static=PayPal, direct, US, UK,Chose, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 # > Apple策略
-static=TestFlight, US, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
+static=TestFlight, US, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
 # > Google策略
-static=Google, US, UK, HK, JP, TW, SG, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+static=Google, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 # > Microsoft策略
-static=Microsoft, US, HK, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+static=Microsoft, US, HK, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 # # Mainland策略-国内访问
-static=Mainland, Final, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
+static=Mainland, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
 # Advertising策略-去广告
 static=Advertising, direct, reject, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
