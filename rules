@@ -61,7 +61,7 @@ static=TW, server-tag-regex=台|台湾|TW|Taiwan, img-url=https://raw.githubuser
 # 新
 static=SG, server-tag-regex=狮城|新加坡|🇸🇬|SG|Singapore, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
 # GlobalMedia策略
-static=GlobalMedia, US, UK, HK, JP, TW, SG, Chose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+static=GlobalMedia, US, UK, HK, JP, TW, SG, Choose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
 # > Youtibe策略
 static=YouTube, US, UK, HK, JP, TW, SG, Choose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
