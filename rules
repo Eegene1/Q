@@ -72,7 +72,7 @@ static=Disney+,Choose, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.gith
 # > HBO策略
 static=HBO,Choose, US, UK, HK, TW,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok, Choose,US, UK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok, Choose,US, UK,HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
 static=Spotify, Choose,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
