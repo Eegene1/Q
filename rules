@@ -5,7 +5,7 @@ server_check_url=http://cp.cloudflare.com/generate_204
 resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 # geo_location_checker
 # 节点地理位置检查
-geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API.js
 # dns_exclusion_list
 # DNS排除列表
 dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
@@ -61,42 +61,38 @@ static=TW, server-tag-regex=台|台湾|TW|Taiwan, img-url=https://raw.githubuser
 # 新
 static=SG, server-tag-regex=狮城|新加坡|🇸🇬|SG|Singapore, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
 # GlobalMedia策略
-static=GlobalMedia,Choose, US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+static=GlobalMedia,Proxies, US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
 # > Youtibe策略
-static=YouTube,Choose, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+static=YouTube,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 # > Netflix策略
-static=Netflix, Choose,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+static=Netflix, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 # > Disney+策略
-static=Disney+,Choose, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+static=Disney+,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 # > HBO策略
-static=HBO,Choose, US, UK, HK, TW,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+static=HBO,Proxies, US, UK, HK, TW,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok, Choose,US, UK,HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok, Proxies,US, UK,HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
-static=Spotify, Choose,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+static=Spotify, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
 # > BiliBili策略
 static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 # 软件&服务策略
 # > Telegram策略
-static=Telegram, Choose,US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=Telegram, Proxies,US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > OpenAI策略
-static=OpenAI,Choose, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
+static=OpenAI,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
 # > Twitter策略
-static=Twitter, Choose,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+static=Twitter, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > PayPal策略
-static=PayPal,Choose, direct, US, UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+static=PayPal,Proxies, direct, US, UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 # > Google策略
-static=Google, Choose,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+static=Google, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 # > Microsoft策略
-static=Microsoft, Choose,US, HK,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
-# # Mainland策略-国内访问
-static=Mainland, Choose, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
-# Advertising策略-去广告
-static=Advertising, direct, reject, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/AdBlock.png
+static=Microsoft, Proxies,US, HK,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Choose, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Proxies, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 [filter_remote]
 ## 远程分流规则订阅
@@ -131,10 +127,11 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 # BiliBili规则
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=Bilibili, force-policy=BiliBili, update-interval=172800, opt-parser=false, enabled=true
 # Advertising规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=Advertising 规则, force-policy=Advertising, update-interval=86400, opt-parser=true, enabled=true
-# Mainland规则
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=Mainland 规则, force-policy=Mainland, update-interval=86400, opt-parser=false, enabled=true
-
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list, tag=Advertising 规则, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+# China 国内网站
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=🎯国内网站-直连, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+# ChinaIP 中国直连
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPs/ChinaIPs.list, tag=🎯中国IP-直连, force-policy=direct, update-interval=172800, opt-parser=false , enabled=true
 # Direct+
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Direct/Direct.list, tag=修正, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list, tag=番茄去广告, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
@@ -145,30 +142,16 @@ https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=⛔️Advertising, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 [filter_local]
 # 本地分流规则:相同规则下本地规则优先生效
-# 耳东橙导航站
-host, cache.video.iqiyi.com, direct            
-host-suffix, iqiyi, direct
-host, erdon.cc, HK
-host, app.ioskk.cc, HK
-host, pan.erdongchan.cn, HK
-host, bw.erdongchan.cn, US
-host, qbit.erdongchan.cn, HK
-#openai
-host-suffix, openai.com, US
-# 绿联
-host-keyword, ugreen, direct
-host-keyword, ugreengroup, direct
-# 快手本地分流
-host-suffix, adkwai.com, direct
-host-suffix, kuaishou.com, direct
-host-suffix, kskwai.com, direct
-# 新版抖音本地分流
-host-suffix, snssdk.com, direct
-host-suffix, amemv.com, direct
-# 其它
 host-suffix, local, direct
-geoip, cn, Mainland
-final, Choose
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 100.64.0.0/10, direct
+ip-cidr, 224.0.0.0/4, direct
+ip6-cidr, fe80::/10, direct
+geoip, cn, direct
+final, Proxies
 
 [server_local]
 # 本地服务器节点
@@ -211,11 +194,10 @@ https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/bilibili.snippe
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/KeepStyle.conf, tag=Keep去广告, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=油管双语, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule, tag=京东历史价格, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/Bilibili_CC.conf, tag=B站繁体, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/cleanup.snippet, tag=小程序净化, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Repcz/Open-Proflies/main/QuantumultX/Rewrites/ITHome.snippet, tag=IT之家去广告, update-interval=172800, opt-parser=false, enabled=true
 https://github.com/VirgilClyne/GetSomeFries/raw/main/snippet/HTTPDNS.Block.snippet, tag=h t t p d n s, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule, tag=解除 TF 限制, update-interval=172800, opt-parser=true, enabled=true
+
 
 [rewrite_local]
 # 本地重写
