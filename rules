@@ -5,7 +5,7 @@ server_check_url=http://cp.cloudflare.com/generate_204
 resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 # geo_location_checker
 # 节点地理位置检查
-geo_location_checker=http://ip-api.com/json/, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API.js
+geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 # dns_exclusion_list
 # DNS排除列表
 dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
