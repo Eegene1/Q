@@ -5,7 +5,7 @@ server_check_url=http://cp.cloudflare.com/generate_204
 resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 # geo_location_checker
 # 节点地理位置检查
-geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/Orz-3/Orz-3/master/QuantumultX/IP.js
+geo_location_checker=http://api.live.bilibili.com/ip_service/v1/ip_service/get_ip_addr? , https://ghproxy.com/https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_bili_cn.js
 # dns_exclusion_list
 # DNS排除列表
 dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
@@ -139,7 +139,7 @@ https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+
 
 # Reject
 # > Advertising
-https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=⛔advertising, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
+https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=advertising, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 [filter_local]
 # 本地分流规则:相同规则下本地规则优先生效
 host-suffix, local, direct
