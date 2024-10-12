@@ -1,6 +1,6 @@
 [general]
 #节点延迟#节点延迟测试
-http://1.1.1.1/generate_204
+server_check_url=http://1.1.1.1/generate_204
 #网络连接测试
 network_check_url = http://www.apple.com/library/test/success.html
 #服务器超时测试
