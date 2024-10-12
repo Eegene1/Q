@@ -1,8 +1,8 @@
 [general]
 #节点延迟#节点延迟测试
-server_check_url=http://www.gstatic.com/generate_204
+http://1.1.1.1/generate_204
 #网络连接测试
-network_check_url=http://www.bing.com
+network_check_url = http://www.apple.com/library/test/success.html
 #服务器超时测试
 server_check_timeout=2000
 #图标显示
@@ -80,7 +80,7 @@ static=Google, Proxies,US,  HK, JP, TW, SG, img-url=https://raw.githubuserconten
 # > Microsoft策略
 static=Microsoft,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Proxies, Auto,US, HK, JP, TW, SG, server-tag-regex=^(?!.*(Left|剩余|到期|日期|Reset|Date|GBGB)).*$, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Proxies, Auto,US, HK, JP, TW, SG, server-tag-regex=^(?!.*(Left|剩|余|到|期|日|Reset|Date|GB)).*$, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 [filter_remote]
 ## 远程分流规则订阅
