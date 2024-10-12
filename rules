@@ -1,98 +1,85 @@
 [general]
-# 代理延迟测速，以确认节点的可用性
-server_check_url=http://cp.cloudflare.com/generate_204
-# 资源解析器
-resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
-# geo_location_checker
-# 节点地理位置检查
-geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
-# dns_exclusion_list
+#节点延迟#节点延迟测试
+server_check_url=http://www.gstatic.com/generate_204
+#网络连接测试
+network_check_url=http://www.bing.com
+#服务器超时测试
+server_check_timeout=2000
+#图标显示
+profile_img_url=https://github.githubassets.com/images/modules/site/integrators/google.png
+#Check节点IP
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+#解析器
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+#跳过代理
+
+excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 182.162.132.1/32, 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+
+#udp丢弃
+udp_drop_list=443
+#第一个filter为4g模式开启规则分流，第二个filter为其他wifi下开启规则分流，第三个wifi1修改成你路由器翻墙的wifi名开启直连模式，第四个wifi2为你公司或者其他有路由器翻墙的WiFi名走直连）
+#默认关闭根据wifi切换模式，如需开启，删除下方的"#"即可
+#running_mode_trigger=filter, filter, filter:all_direct, filter: all_direct
 # DNS排除列表
-dns_exclusion_list = *.localnetwork.uop, *.qq.com, qq.com
-# 排除路线：包含的内容将不经过 QuantumultX 处理
-excluded_routes=192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 17.0.0.0/8
-icmp_auto_reply=true
-[http_backend]
-https://raw.githubusercontent.com/crossutility/Quantumult-X/master/backend-icloud-to-http.js, tag=TV Profile, path=^/icloud-profile/
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+
+
 [dns]
-no-ipv6
-# DoH服务器(DNS over HTTPS)以加密的HTTPS协议进行DNS解析请求，避免原始DNS协议中用户的DNS解析请求被窃听或者修改的问题（例如中间人攻击）来达到保护用户隐私的目的
-# 设置DoH服务器后，所有其他常规DNS服务器设置将被忽略；当设置了多个DoH服务器时，只会使用第一个；当使用的 DoH服务器不是基于HTTP/2时，DoH将被暂时禁用。
-# 阿里 DoH
-doh-server=https://dns.alidns.com/dns-query
-# 同时使用多个DoH服务器(Tf功能
-# 阿里,DNS.SB,阿里,红鱼,IIJ
-# doh-server=https://dns.alidns.com/dns-query, https://doh.dns.sb/dns-query, https://dns.alidns.com/dns-query, https://rubyfish.cn/dns-query, https://public.dns.iij.jp/dns-query
-# 自定义DNS服务器
-# 腾讯云DNSPod DNS
-server=119.29.29.29
-server=119.28.28.28
-# 阿里 AliDNS
+#禁用 IPv6
+#no-ipv6
+#禁用系统 DNS
+#no-system
+#DNS服务器
 server=223.5.5.5
-# 114 DNS
+server=119.29.29.29
 server=114.114.114.114
-# 制定域名解析 dns
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.28.28.28
-server=/*.qq.com/119.28.28.28
-server=/*.tencent.com/119.28.28.28
-server=/*.weixin.com/119.28.28.28
-server=/*.bilibili.com/119.29.29.29
-server=/*.netease.com/119.29.29.29
-server=/*testflight.apple.com/23.76.66.98
+server=/*icloud.com/119.29.29.29
+server=/*icloud.com.cn/119.29.29.29
+server=/*tencent.com/119.29.29.29
+server=/*weixin.com/119.29.29.29
 
 [policy]
 ## 策略组
 ## 将分流规则传递过来的网络请求进行分发
 # 服务器按地区分组策略
-# 美国
-static=US, server-tag-regex=美|美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|🇺🇸|US, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/US.png
-# 英国
-static=UK, server-tag-regex=英|英国|uk|🇬🇧|UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/UK.png
-# 港
-static=HK, server-tag-regex=(?i)(香港|港|hong|HK|HKG|🇭🇰), img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/HK02.png
-# 日
-static=JP, server-tag-regex=日本|东京|大阪|泉日|埼玉|沪日|深日|🇯🇵|JP|Japan, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/JP.png
-# 台湾
-static=TW, server-tag-regex=台|台湾|TW|Taiwan, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
-# 新
-static=SG, server-tag-regex=狮城|新加坡|🇸🇬|SG|Singapore, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
+url-latency-benchmark=HK, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=TW, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=JP, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|兰|美)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=US, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 # GlobalMedia策略
-static=GlobalMedia,Proxies, US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+static=GlobalMedia,Proxies, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
 # > Youtibe策略
-static=YouTube,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+static=YouTube,Proxies, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 # > Netflix策略
-static=Netflix, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+static=Netflix, Proxies,US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 # > Disney+策略
-static=Disney+,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+static=Disney+,Proxies, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 # > HBO策略
-static=HBO,Proxies, US, UK, HK, TW,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+static=HBO,Proxies, US, HK, TW,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok, Proxies,US, UK,HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok, Proxies,US, HK, JP, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
-static=Spotify, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+static=Spotify, Proxies,US,  HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
 # > BiliBili策略
 static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 # 软件&服务策略
 # > Telegram策略
-static=Telegram, Proxies,US, UK, HK, JP, TW, SG, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=Telegram, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > OpenAI策略
-static=OpenAI,Proxies, US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
+static=OpenAI,Proxies, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
 # > Twitter策略
-static=Twitter, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+static=Twitter, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > PayPal策略
-static=PayPal,Proxies, direct, US, UK, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+static=PayPal, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 # > Google策略
-static=Google, Proxies,US, UK, HK, JP, TW, SG,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+static=Google, Proxies,US,  HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 # > Microsoft策略
-static=Microsoft, Proxies,US, HK,  direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
+static=Microsoft,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Proxies, US, HK, JP, TW, SG, proxy, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Proxies, US, HK, JP, TW, SG, server-tag-regex=.*, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 [filter_remote]
 ## 远程分流规则订阅
@@ -150,7 +137,7 @@ ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 224.0.0.0/4, direct
 ip6-cidr, fe80::/10, direct
-geoip, cn, direct
+geoip, CN, direct
 final, Proxies
 
 [server_local]
