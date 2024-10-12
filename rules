@@ -80,7 +80,7 @@ static=Google, Proxies,US,  HK, JP, TW, SG, img-url=https://raw.githubuserconten
 # > Microsoft策略
 static=Microsoft,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 # FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Proxies, Auto,US, HK, JP, TW, SG, server-tag-regex=^(?!.*(Left|剩|余|到|期|日|Reset|Date|GB)).*$, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Proxies, Auto,US, HK, JP, TW, SG, server-tag-regex=^(?!.*(Left|剩|余|到|期|日|Reset|Date|GB|Traffic|Expire)).*$, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 [filter_remote]
 ## 远程分流规则订阅
