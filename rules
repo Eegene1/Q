@@ -58,9 +58,9 @@ static=Netflix, Proxies,US, HK, JP, TW, SG,  img-url=https://raw.githubuserconte
 # > Disney+策略
 static=Disney+,Proxies, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 # > HBO策略
-static=HBO,Proxies, US, HK, TW,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+static=HBO, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok, Proxies,US, HK, JP, TW, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
 static=Spotify, Proxies,US,  HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
