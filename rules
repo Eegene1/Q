@@ -40,6 +40,8 @@ server=/*weixin.com/119.29.29.29
 
 [policy]
 ## 策略组
+static=Eee,Auto,Proxies, US, HK, JP, TW, SG
+static=Proxies, server-tag-regex=.*, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 ## 将分流规则传递过来的网络请求进行分发
 url-latency-benchmark=Auto, server-tag-regex=.*, check-interval=600, tolerance=5,alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
 # 服务器按地区分组策略
@@ -49,38 +51,36 @@ url-latency-benchmark=JP, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台
 url-latency-benchmark=SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|兰|美)).)*$, check-interval=600, tolerance=5, alive-checking=false,img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 url-latency-benchmark=US, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=5, alive-checking=false,img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 # GlobalMedia策略
-static=GlobalMedia,Proxies, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
+static=GlobalMedia,Eee, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
 # > Youtibe策略
-static=YouTube,Proxies, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
+static=YouTube,Eee, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 # > Netflix策略
-static=Netflix, Proxies,US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
+static=Netflix, Eee,US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 # > Disney+策略
-static=Disney+,Proxies, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
+static=Disney+,Eee, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 # > HBO策略
-static=HBO, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
+static=HBO, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 # > TikTok策略
-static=TikTok,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
+static=TikTok,  Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 # > Spotify策略
-static=Spotify, Proxies,US,  HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
+static=Spotify, Eee,US,  HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 # 国内媒体细分策略
 # > BiliBili策略
 static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 # 软件&服务策略
 # > Telegram策略
-static=Telegram, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
+static=Telegram, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > OpenAI策略
-static=OpenAI,Proxies, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
+static=OpenAI,Eee, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/OpenAI.png
 # > Twitter策略
-static=Twitter, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
+static=Twitter, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > PayPal策略
-static=PayPal, Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
+static=PayPal, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 # > Google策略
-static=Google, Proxies,US,  HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
+static=Google, Eee,US,  HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 # > Microsoft策略
-static=Microsoft,  Proxies,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
-# FINAL策略：如果以上的策略均未被匹配到，则听从此策略组的规定
-static=Proxies, Auto,US, HK, JP, TW, SG, server-tag-regex=^(?!.*(Left|剩|余|到|期|天|Reset|Date|GB|Traffic|Expire)).*$, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
+static=Microsoft, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 
 [filter_remote]
 ## 远程分流规则订阅
@@ -139,7 +139,7 @@ ip-cidr, 100.64.0.0/10, direct
 ip-cidr, 224.0.0.0/4, direct
 ip6-cidr, fe80::/10, direct
 geoip, CN, direct
-final, Proxies
+final, Eee
 
 [server_local]
 # 本地服务器节点
