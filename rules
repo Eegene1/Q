@@ -40,7 +40,7 @@ server=/*weixin.com/119.29.29.29
 
 [policy]
 ## 策略组
-static=Eee,Auto,Proxies, US, HK, JP, TW, SG
+static=Eee,Proxies,Auto, US, HK, JP, TW, SG
 static=Proxies, server-tag-regex=.*, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 ## 将分流规则传递过来的网络请求进行分发
 url-latency-benchmark=Auto, server-tag-regex=.*, check-interval=600, tolerance=5,alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
