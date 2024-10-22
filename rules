@@ -121,7 +121,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 # ChinaIP 中国直连
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/ChinaIPs/ChinaIPs.list, tag=中国IP-直连, force-policy=direct, update-interval=172800, opt-parser=false , enabled=true
 # Direct+
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Direct/Direct.list, tag=修正, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Filter/master/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list, tag=番茄去广告, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+.list, tag=Direct, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 # Reject
@@ -170,8 +170,11 @@ https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/r
 
 [task_local]
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP查询, img-url=location.fill.viewfinder.system
-event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁检测, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png, enabled=true
-[mitm]
+# > 请手动添加下面的订阅（流媒体Task订阅集合）
+https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/UI-Action.json
+# > 流媒体解锁查询
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
+
 # 跳过验证证书
 skip_validating_cert = false
 # 强制SNI域名
