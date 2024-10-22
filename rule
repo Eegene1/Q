@@ -124,9 +124,9 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Direct/Direct.list, tag=修正, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/EAlyce/conf/main/Rule/FQNovelAdvertising.list, tag=番茄去广告, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Direct+.list, tag=Direct, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
-
 # Reject
 # > Advertising
+https://raw.githubusercontent.com/Cats-Team/AdRules/main/qx.conf, tag=广告终结者, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list, tag=advertising, force-policy=reject, update-interval=172800, opt-parser=true, inserted-resource=true, enabled=true
 [filter_local]
 # 本地分流规则:相同规则下本地规则优先生效
@@ -156,20 +156,12 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule, 
 https://raw.githubusercontent.com/chxm1023/Task/main/TieBa/TieBa_cookie.js, tag=贴吧获取Cookie, update-interval=172800, opt-parser=false, enabled=true
 https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, tag=wps  noby, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet, tag=substore, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/xiaohongshu.snippet, tag=小红书去广告, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/cainiao.snippet, tag=菜鸟去广告, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/weibo.snippet, tag=微博去广告, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/WebPage.conf, tag=网页去广告, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/amap.snippet, tag=高德地图去广告, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/MyBlockAds.conf, tag=MyBlockAds, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/bilibili.snippet, tag=哔哩哔哩去广告, update-interval=172800, opt-parser=false, inserted-resource=true, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/KeepStyle.conf, tag=Keep去广告, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=油管双语, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/cleanup.snippet, tag=小程序净化, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Repcz/Open-Proflies/main/QuantumultX/Rewrites/ITHome.snippet, tag=IT之家去广告, update-interval=172800, opt-parser=false, enabled=true
-https://github.com/VirgilClyne/GetSomeFries/raw/main/snippet/HTTPDNS.Block.snippet, tag=httpdns, update-interval=172800, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf, tag=微信小程序去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf, tag=油管去广告@Maasea, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf, tag=微博去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Ximalaya.conf, tag=喜马拉雅去广告[卸载重装]@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf, tag=高德地图净化[卸载重装]@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/NeteaseAds.conf, tag=网易云音乐去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
 
 
 [rewrite_local]
