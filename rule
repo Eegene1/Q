@@ -170,8 +170,6 @@ https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/r
 
 [task_local]
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP查询, img-url=location.fill.viewfinder.system
-# > 请手动添加下面的订阅（流媒体Task订阅集合）
-https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/UI-Action.json
 # > 流媒体解锁查询
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体解锁查询, img-url=arrowtriangle.right.square.system, enabled=true
 
