@@ -161,4 +161,4 @@ skip_validating_cert = false
 # 强制SNI域名
 force_sni_domain_name = false
 # 主机名
-hostname = pangolin-sdk-toutiao.com, pglstatp-toutiao.com, byteimg.com, pstatp.com, snssdk.com, -*amemv.com, -*snssdk.com, -www.google.com, ms.jr.jd.com, me-api.jd.com, api.m.jd.com, *.byteoversea.com, *.tik-tokapi.com, c.tieba.baidu.com,-*.apple.com, -consumer.fcbox.com, -*huami.com, -weather-data.apple.com, -*amemv.com, -*snssdk.com, -www.google.com
+hostname = -*.apple.com, -consumer.fcbox.com, -*huami.com, -weather-data.apple.com, -*amemv.com, -*snssdk.com, -www.google.com
