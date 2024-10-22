@@ -8,7 +8,7 @@ server_check_timeout=2000
 #图标显示
 profile_img_url=https://github.githubassets.com/images/modules/site/integrators/google.png
 #Check节点IP
-geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/limbopro/QuantumultX/master/Scripts/IP_API.js
+geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API.js
 #解析器
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 #跳过代理
