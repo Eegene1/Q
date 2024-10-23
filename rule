@@ -136,14 +136,12 @@ https://github.com/DualSubs/YouTube/raw/main/modules/DualSubs.YouTube.snippet, t
 https://github.com/VirgilClyne/iRingo/raw/main/snippet/Location.snippet, tag= iRingo: Location & Map, update-interval=172800, opt-parser=false, enabled=true
 https://github.com/VirgilClyne/iRingo/raw/main/snippet/Siri.snippet, tag= iRingo: Siri & Search, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/erdongchanyo/Rules/main/Quantumult%20X/AllinOneRewrite/edc.conf, tag=EDC-AllinOne, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/cnftp.snippet, tag=cnftp(RuCu6, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/QuantumultX/Advertising/Advertising.conf, tag=Advertising(blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Redirect/Redirect.conf, tag=Redirect(blackmatrix7, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-Store, update-interval=172800, opt-parser=true, enabled=true
 https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule, tag=百度贴吧超级去广告, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/chxm1023/Task/main/TieBa/TieBa_cookie.js, tag=贴吧获取Cookie, update-interval=172800, opt-parser=false, enabled=true
-https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=boxjs, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js, tag=wps  noby, update-interval=172800, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf, tag=微信小程序去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf, tag=油管去广告@Maasea, update-interval=86400, opt-parser=false, enabled=true
