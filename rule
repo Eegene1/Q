@@ -1,58 +1,39 @@
 [general]
-#节点延迟#节点延迟测试
-server_check_url=http://1.1.1.1/generate_204
-#服务器超时测试
-server_check_timeout=2000
-#图标显示
-profile_img_url=https://github.githubassets.com/images/modules/site/integrators/google.png
-#Check节点IP
-geo_location_checker=http://ip-api.com/json/, https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/GeoLocationChecker/QuantumultX/IP-API.js
-#解析器
+# Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
+# 你同样可以在 server_local/server_remote 中，为节点、订阅单独指定server_check_url参数
+# 如果你为节点单独指定了url，则所有相关延迟测试中，均会采用此 url 地址
+server_check_url=http://cp.cloudflare.com/generate_204
+# 服务器测试超时时间 (毫秒，3000为3秒)
+server_check_timeout = 3000
+# 用于设置图标显示
+profile_img_url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/fmz200-01.png
+# dns_exclusion_list中的域名将不使用fake-ip方式. 其它域名则全部采用fake-ip及远程解析的模式
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+# geo_location_checker：用于节点页面的顶部节点信息展示(节点开关左边的信息)
+geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/server_location.js
+# 资源解析器，可用于自定义各类远程资源的转换，如节点，规则 filter，重写 rewrite 等，url 地址可远程，可task_local本地/iCloud(Quantumult X/Scripts目录);
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
-#跳过代理
-
-excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 182.162.132.1/32, 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
-
-#udp丢弃
+# 下列表中的内容将不经过QuantumultX的处理，设置后建议重启设备
+excluded_routes=239.255.255.250/32
+# fallback_udp_policy：仅支持 v1.0.19 以及之后的版本。仅支持末端策略（末端策略为经由规则模块和策略模块后所命中的策略，例如：direct、reject 以及节点；不支持内置策略 proxy 以及其它自定义策略）。
+fallback_udp_policy=direct
+# UDP Drop名单：同白名单类似，但不会返回 ICMP “端口不可达” 信息，名单仅处理 whitelist名单中的端口
 udp_drop_list=443
-#第一个filter为4g模式开启规则分流，第二个filter为其他wifi下开启规则分流，第三个wifi1修改成你路由器翻墙的wifi名开启直连模式，第四个wifi2为你公司或者其他有路由器翻墙的WiFi名走直连）
-#默认关闭根据wifi切换模式，如需开启，删除下方的"#"即可
-#running_mode_trigger=filter, filter, filter:all_direct, filter: all_direct
-# DNS排除列表
-dns_exclusion_list=*.10099.com.cn, *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn
-[http_backend]
-https://raw.githubusercontent.com/crossutility/Quantumult-X/master/backend-icloud-to-http.js, tag=TV Profile, path=^/icloud-profile/
 
 
+# =====================================
+# 域名系统（英文：Domain Name System，缩写：DNS）是互联网的一项服务。它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+# =====================================
 [dns]
 no-ipv6
-# DoH服务器(DNS over HTTPS)以加密的HTTPS协议进行DNS解析请求，避免原始DNS协议中用户的DNS解析请求被窃听或者修改的问题（例如中间人攻击）来达到保护用户隐私的目的
-# 设置DoH服务器后，所有其他常规DNS服务器设置将被忽略；当设置了多个DoH服务器时，只会使用第一个；当使用的 DoH服务器不是基于HTTP/2时，DoH将被暂时禁用。
-# 阿里 DoH
-doh-server=https://dns.alidns.com/dns-query
-# 同时使用多个DoH服务器(Tf功能
-# 阿里,DNS.SB,阿里,红鱼,IIJ
-# doh-server=https://dns.alidns.com/dns-query, https://doh.dns.sb/dns-query, https://dns.alidns.com/dns-query, https://rubyfish.cn/dns-query, https://public.dns.iij.jp/dns-query
-# 自定义DNS服务器
-# 腾讯云DNSPod DNS
 server=119.29.29.29
-server=119.28.28.28
-# 阿里 AliDNS
-server=223.5.5.5
-# 114 DNS
-server=114.114.114.114
-# 制定域名解析 dns
-server=/*.taobao.com/223.5.5.5
-server=/*.tmall.com/223.5.5.5
-server=/*.alipay.com/223.5.5.5
-server=/*.aliyun.com/223.5.5.5
-server=/*.jd.com/119.28.28.28
-server=/*.qq.com/119.28.28.28
-server=/*.tencent.com/119.28.28.28
-server=/*.weixin.com/119.28.28.28
-server=/*.bilibili.com/119.29.29.29
-server=/*.netease.com/119.29.29.29
-server=/*testflight.apple.com/23.76.66.98
+address=/mtalk.google.com/108.177.125.188
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
 
 [policy]
 ## 策略组
