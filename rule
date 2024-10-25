@@ -16,7 +16,7 @@ running_mode_trigger = filter, filter, SSID:all_proxy, SSID:all_direct
 
 # 地理位置检查(二选一)
 # geo_location_checker = disabled
-geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://github.com/Centralmatrix3/Scripts/raw/master/Scripts/IP-API.js
+geo_location_checker=http://ip-api.com/json/?lang=Eng, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
 
 # 资源解析器
 resource_parser_url = https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/resource-parser.js
