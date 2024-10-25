@@ -152,7 +152,7 @@ https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf, tag=哔�
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/NeteaseAds.conf,tag=网易云净化,update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf,tag=油管净化,update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/VirgilClyne/iRingo/main/snippet/Location.snippet,tag=经纬度解锁,update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/NeteaseAds.conf,tag=网易云去广告,update-interval=86400, opt-parser=false, enabled=true
+
 [rewrite_local]
 # 本地重写
 
