@@ -60,10 +60,8 @@ url-latency-benchmark=TW, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|�
 url-latency-benchmark=JP, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=5,alive-checking=false, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 url-latency-benchmark=SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|兰|美)).)*$, check-interval=600, tolerance=5, alive-checking=false,img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 url-latency-benchmark=US, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=5, alive-checking=false,img-url=https://ghproxy.com/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
-# GlobalMedia策略
-static=GlobalMedia,Eee, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 # 国外媒体细分策略
-# > Youtibe策略
+# > Youtube策略
 static=YouTube,Eee, US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 # > Netflix策略
 static=Netflix, Eee,US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
@@ -89,7 +87,6 @@ static=Twitter, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.co
 static=PayPal, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 # > Google策略
 static=Google, Eee,US,  HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
-static=Apple,Eee,direct,US,  HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
 # > Microsoft策略
 static=Microsoft, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 
@@ -105,7 +102,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Quan
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/TikTok/TikTok.list, tag=TikTok 规则, force-policy=TikTok, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify 规则, force-policy=Spotify, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX//YouTube/YouTube.list, tag=YouTube 规则, force-policy=YouTube, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GlobalMedia/GlobalMedia.list, tag=GlobalMedia 规则, force-policy=GlobalMedia, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Claude/Claude.list, tag=Claude规则, force-policy=AI, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=OpenAI 规则, force-policy=AI, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Gemini/Gemini.list, tag=Gemini 规则, force-policy=AI, update-interval=86400, opt-parser=false, enabled=true
@@ -115,7 +111,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft 规则, force-policy=Microsoft, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Twitter/Twitter.list, tag=Twitter规则, force-policy=Twitter, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Google/Google.list, tag=Google规则, force-policy=Google, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple规则, force-policy=Apple, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/BiliBili/BiliBili.list, tag=Bilibili规则, force-policy=BiliBili, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list, tag=国内网站, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 
