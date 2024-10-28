@@ -80,7 +80,7 @@ static=BiliBili, HK, TW, direct, img-url=https://raw.githubusercontent.com/erdon
 # > Telegram策略
 static=Telegram, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 # > AI策略
-static=AI,Eee, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Robot.png
+static=AI,Eee, US, HK, JP, TW, SG,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
 # > Twitter策略
 static=Twitter, Eee,US, HK, JP, TW, SG, img-url=https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 # > PayPal策略
