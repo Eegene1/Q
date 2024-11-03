@@ -16,8 +16,7 @@ profile_img_url = https://github.com/Centralmatrix3/Scripts/raw/master/Gallery/S
 
 # 地理位置检查(二选一)
 # geo_location_checker = disabled
-geo_location_checker=http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/server_location.js
-
+geo_location_checker = http://ip-api.com/json/?lang=ENG, https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Quantumult/Script/geo_location_checker.js
 # 资源解析器
 resource_parser_url = https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/resource-parser.js
 
